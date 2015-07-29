@@ -1,0 +1,33 @@
+{
+  "name": "cert-encoding",
+  "version": "0.0.0",
+  "description": "Certificate encoding pem and der",
+  "homepage": "https://github.com/GTDev87/cert_encoding",
+  "repository": "GTDev87/cert-encoding",
+  "author": {
+    "name": "Gregory Thompson",
+    "email": "gregt87@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [],
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-jscs": "^1.1.0",
+    "gulp-jshint": "^1.5.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^0.4.5",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
