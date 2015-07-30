@@ -4,6 +4,25 @@ var certEncoding = require('../lib');
 
 describe('cert-encoding', function () {
   it('test certificate conversion', function () {
+    var actualPemCertificate = 
+      "-----BEGIN CERTIFICATE-----\n" +
+      "MIICpDCCAYwCCQDPSndIutt5pDANBgkqhkiG9w0BAQsFADAUMRIwEAYDVQQDEwls\n" +
+      "b2NhbGhvc3QwHhcNMTUwNzI5MjIyNzAwWhcNMTUwNzMwMjIyNzAwWjAUMRIwEAYD\n" +
+      "VQQDEwlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDD\n" +
+      "oi6MWli19jXtAzPPUi+t2JuswXIlENfN9SQcskjTAIobwJ14ABPkmiHGqY9IztC6\n" +
+      "XCBeiMCFHmaVDVV/l7/njgFSJXMqHKP9QMVZhJoikhUN9pmpeWt14T0u/IbHXRG0\n" +
+      "Jo6CurPuQDFfNZqW+qPnublgM72Kz72ZLbuVtg0MFi3LVg7Icqf/emEQrhjytH0m\n" +
+      "wNfnDaJPA4+s04HyREaCqhf6m5H+4AtePUN2nDlbNhyMzNeOBry/EuyF++ZVZKD8\n" +
+      "Qlk0VDwBzckktZC/pOEsv/ke6OJOnaAO0efF5hAr/XZ8e+1tIjB5U415ClSZSrK4\n" +
+      "xL5/ScoqVB/jYqwBc6D5AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAAJKy++Uc8zY\n" +
+      "EOb9WR2QGtBG/o2RckK4X6/yMl2Qb2H+ZZ6sNOOQy9Ej8yyv3KM0GgKf3kwmhJAX\n" +
+      "g/QeZapzL8lqzVps+ctDCIwxz2BoYsGgCwIWgKvGqu66p4nQJJ5g7q5w+EW9yfO1\n" +
+      "14ECw33zwX2kfL64BpELc6eqwgfNiM5nBz4XPNYx5K583Nt/WV5+Gsm5lXCMKNE+\n" +
+      "P7fSDrV+2bgrSwr9FIh2yItqkytA/i6Jvz0QWzy5K0M3JIPa2knMrAPkIl+f85uv\n" +
+      "ieiLBIeoFBY8OA/QWB6tCCFcOyknRfBEObRylWO9kfvQjYXpBMTxHFLcq5mf2NYZ\n" +
+      "OYi5xJYCr4Y=\n" +
+      "-----END CERTIFICATE-----";
+
     var certificateDEM = new Buffer([
       48, 130, 2, 164, 48, 130, 1, 140, 2, 9, 0, 207, 74, 119, 72, 186, 219, 121, 164, 48, 13, 6, 9, 42, 134, 72, 134, 247, 13, 1, 1, 11, 5, 0, 48, 20, 49, 18, 48, 16, 6, 3, 85, 4, 3, 19, 9, 108, 111, 99, 97, 108, 104, 111, 115, 116, 48, 30, 23, 13, 49, 53, 48, 55,
       50, 57, 50, 50, 50, 55, 48, 48, 90, 23, 13, 49, 53, 48, 55, 51, 48, 50, 50, 50, 55, 48, 48, 90, 48, 20, 49, 18, 48, 16, 6, 3, 85, 4, 3, 19, 9, 108, 111, 99, 97, 108, 104, 111, 115, 116, 48, 130, 1, 34, 48, 13, 6, 9, 42, 134, 72, 134, 247, 13, 1, 1, 1, 5,
@@ -19,10 +38,6 @@ describe('cert-encoding', function () {
     ]);
     
     debugger;
-
-    var pem = certEncoding.convert(certificateDEM);
-    console.log("pem = %j", pem);
-
-    assert(false, 'we expected this package author to add actual unit tests.');
+    assert(actualPemCertificate, certEncoding.convert(certificateDEM));
   });
 });
