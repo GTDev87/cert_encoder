@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Certificate encoding pem and der",
   "homepage": "https://github.com/GTDev87/cert_encoding",
-  "repository": "GTDev87/cert-encoding",
+  "repository": "GTDev87/cert_encoding",
   "author": {
     "name": "Gregory Thompson",
     "email": "gregt87@gmail.com",
