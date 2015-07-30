@@ -27,6 +27,7 @@
   },
   "scripts": {
     "prepublish": "gulp prepublish",
+    "debug-test": "node debug node_modules/gulp/bin/gulp.js test",
     "test": "gulp"
   },
   "license": "MIT",
