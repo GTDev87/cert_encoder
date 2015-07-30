@@ -2,7 +2,7 @@
 var assert = require('assert');
 var certEncoding = require('../lib');
 
-describe('cert-encoding', function () {
+describe('cert_encoder', function () {
   it('test certificate conversion', function () {
     var actualPemCertificate = 
       "-----BEGIN CERTIFICATE-----\n" +

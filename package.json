@@ -1,9 +1,9 @@
 {
-  "name": "cert_encoding",
-  "version": "0.0.1",
+  "name": "cert_encoder",
+  "version": "0.0.0",
   "description": "Certificate encoding pem and der",
-  "homepage": "https://github.com/GTDev87/cert_encoding",
-  "repository": "GTDev87/cert_encoding",
+  "homepage": "https://github.com/GTDev87/cert_encoder",
+  "repository": "GTDev87/cert_encoder",
   "author": {
     "name": "Gregory Thompson",
     "email": "gregt87@gmail.com",
