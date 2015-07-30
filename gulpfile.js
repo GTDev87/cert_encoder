@@ -1,5 +1,6 @@
 'use strict';
 var gulp = require('gulp');
+var DEBUG = process.env.NODE_ENV === 'debug';
 var excludeGitignore = require('gulp-exclude-gitignore');
 var mocha = require('gulp-mocha');
 var jshint = require('gulp-jshint');
@@ -38,7 +39,7 @@ gulp.task('test', ['pre-test'], function (cb) {
 
   gulp.src('test/**/*.js')
     .pipe(plumber())
-    .pipe(mocha({reporter: 'spec'}))
+    .pipe(mocha({reporter: 'spec', debugBrk: DEBUG}))
     .on('error', function (err) {
       mochaErr = err;
     })
