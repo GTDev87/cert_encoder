@@ -1,6 +1,6 @@
 {
   "name": "cert_encoding",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Certificate encoding pem and der",
   "homepage": "https://github.com/GTDev87/cert_encoding",
   "repository": "GTDev87/cert_encoding",
